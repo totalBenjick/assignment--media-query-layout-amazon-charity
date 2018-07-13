@@ -1,0 +1,196 @@
+*{
+	border-size: box-size;
+	font-family: 'Roboto', sans-serif;
+}
+/* todos van a tener 767 de widht? no solo por defecto aa*/
+//$altIma:
+//$
+
+.container{
+	display:flex;
+	justify-content:center;
+	//border:1px solid blue;
+	.container__marco{
+		//border:1px solid yellow;
+	}
+	.top{
+		width: 100%;
+		height: 150px;
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+		 /*esto se modifica al restirarse*/
+		border:1px solid green;
+		background-color: #DDDDDD;
+	}
+	.tree{
+		padding-top:-50px;
+		width:35%;
+	}
+	.secure{
+		padding-top:50px;
+	}
+	.people{
+		//background-color:white;
+		color:#007C4C;
+		padding:20px;
+		width:100%;
+		//border:1px solid red;
+		font-family:'PT Mono', monospace;
+		font-size:30px;
+
+	}
+	.hache{
+		//border:1px solid green;
+		font-size:17px;
+		line-height:1.6;
+		width:95%;
+		margin-left:25px;
+	}
+
+	.replica{
+		 /*esto se modfica al restirarse*/
+		 display:flex;
+		 flex-direction:row;
+		 flex-wrap:wrap;
+		 justify-content:center;
+		}
+		.replica__box{
+			width: 363px;
+			min-width:363px;
+			max-width: 363px;
+			/*			width: 90%;
+			min-width: 90%;
+			max-width: 90%; */
+			height:611px;
+			min-height:611px;
+			max-height:611px;
+			border:1px solid #dddddd;
+			border-radius:15px;
+			display:flex;
+			flex-direction:column;
+			justify-content:flex-start;
+			align-content:center;
+			margin-left:1.5%;
+			margin-right:1.5%;
+			margin-top:20px;
+			margin-bottom:20px;
+			padding:3px;
+
+			//height: 800px;
+			//max-width
+		}
+		.imag{
+			width: 95%;
+			padding: 10px 5px 10px 10px;
+			//height:600px;
+
+		}
+		.rep{
+
+		}
+		.nombre{
+			color:#007C4C;
+			padding:10px 0px 10px 20px;
+			width:100%;
+			//border:1px solid orange;
+			font-family:'PT Mono', monospace;
+			font-size:20px;
+		}
+		.texto{
+			max-width: 100%;
+			//border:1px dotted teal;
+			line-height: 1.6;
+			padding:10px;
+		}
+	}	
+/*esto se modifica al restirarse*/
+
+/* de 0 a 767 es blanca, en iphone y */
+@media screen and (min-width: 768px){
+	body{
+	background-color:teal;}
+	.top{
+	flex-direction:row;
+	flex-wrap:wrap;
+	}
+	.replica__box{
+			width: 42%;
+			min-width:42%;
+			max-width: 42%;
+			height:611px;
+			min-height:611px;
+			max-height:611px;
+			border:1px solid #dddddd;
+			border-radius:15px;
+			display:flex;
+			flex-direction:column;
+			justify-content:flex-start;
+			align-content:center;
+			margin-left:1.5%;
+			margin-right:1.5%;
+			margin-top:20px;
+			margin-bottom:20px;
+			padding:3px;
+			//height: 800px;
+			//max-width
+		}
+}
+
+
+
+@media screen and (min-width: 1024px){
+	body{
+	background-color:lightgray;
+	}
+	.replica__box{
+			width: 363px;
+			min-width:363px;
+			max-width: 363px;
+			height:611px;
+			min-height:611px;
+			max-height:611px;
+			border:1px solid #dddddd;
+			border-radius:15px;
+			display:flex;
+			flex-direction:column;
+			justify-content:flex-start;
+			align-content:center;
+			margin-left:1.5%;
+			margin-right:1.5%;
+			margin-top:20px;
+			margin-bottom:20px;
+			padding:3px;
+
+			//height: 800px;
+			//max-width
+		}
+		.top{
+		width: 100%;
+		height: 150px;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		 /*esto se modifica al restirarse*/
+		border:1px solid green;
+		background-color: #DDDDDD;
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
